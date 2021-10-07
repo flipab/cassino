@@ -1,1 +1,6 @@
-<p>lista-numeros works!</p>
+<button
+  *ngFor="let turma of turmas"
+  type="button"
+>
+  {{ turma.disciplina.codigo }}
+</button>
