@@ -1,4 +1,5 @@
 import { Carta } from './carta';
+import { Numeros } from './numeros';
 
 describe('Carta', () => {
 
@@ -7,9 +8,15 @@ describe('Carta', () => {
     carta = new Carta(
       new Carta(
         'Copas',
-      ),
-      1,
-      );
+        1,
+        new Numeros(
+          1,
+          'Copas',
+        ),
+        new Naipe(
+          1,
+          'Copas',
+        );
     });
 
   it('should create an instance', () => {

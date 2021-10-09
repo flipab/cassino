@@ -4,7 +4,9 @@ let numeros: Numeros;
 
 beforeEach(() => {
   numeros = new Numeros(
-    111,
+    1,
+    'As',
+
   );
 });
 
