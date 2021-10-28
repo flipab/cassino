@@ -1,9 +1,24 @@
 <nav>
-  <app-lista-numeros
-  >
-  </app-lista-numeros>
+
 </nav>
 <main>
   Selecione um Numero e um Naipe:
+  <br>
+
+  <app-lista-numeros (numeroSelecionado)="alteraNumero($event)">
+
+  </app-lista-numeros>
+  <br>
+  <app-lista-naipes (naipeSelecionado)="alteraNaipe($event)">
+
+  </app-lista-naipes>
+  <br>
+  <app-carta *ngIf="numero&&naipe" [numero]="numero" [naipe]="naipe">
+
+  </app-carta>
+
+
+
+
 </main>
 <router-outlet></router-outlet>

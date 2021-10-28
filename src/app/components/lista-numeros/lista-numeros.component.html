@@ -1,1 +1,3 @@
-<p>lista-numeros works!</p>
+<button type="button" *ngFor="let numero of numeros" (click)="selecionaNumero(numero)">
+  {{numero.numero}}
+</button>

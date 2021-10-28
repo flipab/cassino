@@ -1,11 +1,11 @@
 import { Naipe } from "./naipe";
-import { Numeros } from "./numeros";
+import { Numero } from "./numeros";
 
 export class Carta {
 
   constructor(
-    public naipe: Naipe[],
-    public numero: Numeros[],
+    public naipe: Naipe,
+    public numero: Numero,
 
   ) {
   }

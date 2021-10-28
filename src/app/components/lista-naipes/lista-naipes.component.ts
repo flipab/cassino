@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, EventEmitter, OnInit, Output } from '@angular/core';
+import { Naipe } from 'src/app/models/naipe';
 
 @Component({
   selector: 'app-lista-naipes',
@@ -6,12 +7,14 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./lista-naipes.component.css']
 })
 export class ListaNaipesComponent implements OnInit {
+  @Output()
+  public naipeSelecionado: EventEmitter<Naipe> = new EventEmitter();
 
   public naipes: Naipe[] = [
-    new Naipe(1, 'paus'),
-    new Naipe(2, 'ouros'),
-    new Naipe(3, 'copas'),
-    new Naipe(4, 'espadas'),
+    new Naipe(1, 'paus', '♣'),
+    new Naipe(2, 'ouros', '♦'),
+    new Naipe(3, 'copas', '♥'),
+    new Naipe(4, 'espadas', '♠'),
   ]
 
 

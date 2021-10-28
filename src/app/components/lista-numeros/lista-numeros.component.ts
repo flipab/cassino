@@ -1,5 +1,5 @@
 import { Component, EventEmitter, OnInit, Output } from '@angular/core';
-import { Numeros } from 'src/app/models/numeros';
+import { Numero } from 'src/app/models/numeros';
 
 @Component({
   selector: 'app-lista-numeros',
@@ -13,20 +13,21 @@ export class ListaNumerosComponent implements OnInit {
 
 
 
-  public numeros: Numeros[] = [
-    new Numeros(1, 'As'),
-    new Numeros(2, 'Dois'),
-    new Numeros(3, 'Três'),
-    new Numeros(4, 'Quatro'),
-    new Numeros(5, 'Cinco'),
-    new Numeros(6, 'Seis'),
-    new Numeros(7, 'Sete'),
-    new Numeros(8, 'Oito'),
-    new Numeros(9, 'Nove'),
-    new Numeros(10, 'Dez'),
-    new Numeros(11, 'Valete'),
-    new Numeros(12, 'Dama'),
-    new Numeros(13, 'Rei'),
+  public numeros: Numero[] = [
+    new Numero(1, 'As'),
+    new Numero(2, 'Dois'),
+    new Numero(3, 'Três'),
+    new Numero(4, 'Quatro'),
+    new Numero(5, 'Cinco'),
+    new Numero(6, 'Seis'),
+    new Numero(7, 'Sete'),
+    new Numero(8, 'Oito'),
+    new Numero(9, 'Nove'),
+    new Numero(10, 'Dez'),
+    new Numero(11, 'Valete'),
+    new Numero(12, 'Dama'),
+    new Numero(13, 'Rei'),
+  ];
 
     constructor() {
     }
@@ -38,4 +39,4 @@ export class ListaNumerosComponent implements OnInit {
     public selecionaNumero(numero: Numero) {
       this.numeroSelecionado.emit(numero);
     }
-
+}

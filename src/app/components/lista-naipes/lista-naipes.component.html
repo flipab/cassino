@@ -1,1 +1,3 @@
-<p>lista-naipes works!</p>
+<button type="button" *ngFor="let naipe of naipes" (click)="selecionaNaipe(naipe)">
+  {{naipe.naipe}}
+</button>

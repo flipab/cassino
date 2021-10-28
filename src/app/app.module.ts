@@ -4,13 +4,15 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { ListaNumerosComponent } from './components/lista-numeros/lista-numeros.component';
-import { ListaNaipesComponent } from './lista-naipes/lista-naipes.component';
+import { ListaNaipesComponent } from './components/lista-naipes/lista-naipes.component';
+import { CartaComponent } from './components/carta/carta.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     ListaNumerosComponent,
     ListaNaipesComponent,
+    CartaComponent,
   ],
   imports: [
     BrowserModule,
