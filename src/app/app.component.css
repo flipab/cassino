@@ -11,8 +11,31 @@ main {
   :host {
     flex-direction: column;
   }
+
   main {
     margin-left: 0;
     margin-top: 1em;
+    font-family: Tahoma, Verdana, sans-serif;
+
   }
 }
+  *{
+    font-family: Tahoma, Verdana, sans-serif;
+
+  }
+  h1 {
+    font-size: 40px;
+    font-weight: normal;
+  }
+
+  h2 {
+    font-size: 30px;
+  }
+
+  .listas {
+    font-size: 30px;
+  }
+
+
+
+

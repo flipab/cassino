@@ -1,6 +1,8 @@
-<div>
-  {{numero?.numero}}
-</div>
-<div [class.vermelho]="naipe?.naipe === 'ouros' || naipe?.naipe === 'copas' ">
-  {{naipe?.simbolo}}
+<div class="card" >
+  <div>
+    {{numero?.numero}}
+  </div>
+  <div class="simbolo" [class.vermelho]="naipe?.naipe === 'ouros' || naipe?.naipe === 'copas' ">
+    {{naipe?.simbolo}}
+  </div>
 </div>

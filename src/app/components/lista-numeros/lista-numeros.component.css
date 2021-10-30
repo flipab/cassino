@@ -1,0 +1,16 @@
+.btn {
+  border-color: #2196F3;
+  border-radius: 5px;
+  padding: 20px;
+  background-color: white;
+  transition-duration: 0.4s;
+  margin: 10px;
+
+}
+
+.btn:hover {
+  background-color: #2196F3; /* Green */
+  color: white;
+  transition-duration: 0.4s;
+
+}
